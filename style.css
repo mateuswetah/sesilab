@@ -1,0 +1,52 @@
+/**
+ * Theme Name: SESI LAB
+ * Description: Tema para o SESI LAB
+ * Author: wetah
+ * Template: blocksy
+ * Text Domain: sesilab
+ */
+
+ /* Ajustes no botão de Ingressos do Cabeçalho */
+.ct-header-cta [data-size="large"] {
+    --theme-button-min-height: 56px;
+    --theme-button-padding: 3px 46px;
+}
+[data-header*="type-1"] .ct-header [data-id="button"] .ct-button-ghost:hover,
+[data-header*="type-1"] .ct-header [data-id="button"] .ct-button-ghost:focus {
+    background-color: transparent;
+}
+
+/* Menu mobile ainda mostra o header */
+#offcanvas.ct-panel {
+    top: calc(var(--admin-bar, 0px) + 110px);
+}
+#offcanvas.ct-panel .ct-panel-actions {
+    display: none;
+    visibility: hidden;
+}
+#offcanvas.ct-panel .ct-panel-content-inner {
+    --panel-padding: 72px 40px;
+}
+
+/* Espaçamento de links do menu no footer */
+.ct-footer .widget .widget-menu .menu-item {
+    margin-top: 15px;
+}
+@media screen and (max-width: 992px) {
+    .ct-footer .ct-widget h2 {
+        font-size: 14px !important;
+    }
+    .ct-footer .wp-container-5 {
+        flex-basis: 100%;
+    }
+    .ct-footer .wp-container-8 {
+        flex-basis: 35%;
+    }
+    .ct-footer .wp-container-11 {
+        flex-basis: 65%;
+    }
+    .ct-footer .wp-container-8>.wp-block-group,
+    .ct-footer .wp-container-11>.wp-block-group {
+        border-bottom: none;
+    }
+}
