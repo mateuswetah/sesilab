@@ -3,7 +3,6 @@
  * Title: Banner com Gradiente
  * Slug: sesilab/banner-gradiente
  * Categories: banners, sesilab
- * Viewport Width: 1152
  */
 ?>
 <!-- wp:cover {"url":"http://mateuswetah.com.br/wp-content/uploads/2017/09/31279958546_524d4872d6_z.jpg","id":519,"dimRatio":0,"minHeight":336,"isDark":false,"style":{"border":{"radius":"24px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
