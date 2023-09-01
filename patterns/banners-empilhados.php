@@ -4,6 +4,12 @@
  * Slug: sesilab/banners-empilhados
  * Categories: sesilab, banners
  */
+
+ $image_tags = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/tags.svg';
+ $image_tag_primaria_200 = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/tag-primaria-200.svg';
+ $image_arrow_left_white = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/arrow-left-white.svg';
+ $image_sesi_labs_fenomenos = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/sesi-labs-fenomenos.png';
+ $image_sesi_labs_imaginando_futuro_1 = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/sesi-labs-imaginando-futuro-1.png';
 ?>
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|70"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -13,7 +19,7 @@
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"dimensions":{"minHeight":"336px"},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="min-height:336px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"left","style":{"typography":{"textTransform":"uppercase"},"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="margin-top:0;margin-bottom:0;text-transform:uppercase"><img class="wp-image-1521" style="width: NaNpx;" src="http://mateuswetah.com.br/wp-content/uploads/2021/12/tags.svg" alt=""> Título</h2>
+<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="margin-top:0;margin-bottom:0;text-transform:uppercase"><img class="wp-image-1521" style="width: NaNpx;" src="<?php echo esc_url( $image_tags ); ?>" alt=""> Título</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} -->
@@ -26,15 +32,15 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Descobrir <img class="wp-image-1519" style="width: NaNpx;" src="http://mateuswetah.com.br/wp-content/uploads/2021/12/arrow-left-white.svg" alt=""></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Descobrir <img class="wp-image-1519" style="width: NaNpx;" src="<?php echo esc_url( $image_arrow_left_white ); ?>" alt=""></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:cover {"url":"http://mateuswetah.com.br/wp-content/uploads/2023/07/sesi-labs-fenomenos.png","id":1572,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-cover is-light" style="margin-top:0;margin-bottom:0;min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-1572" alt="a room with a wooden floor" src="http://mateuswetah.com.br/wp-content/uploads/2023/07/sesi-labs-fenomenos.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"485px"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:cover {"url":"<?php echo esc_url( $image_sesi_labs_fenomenos ); ?>","id":1572,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-cover is-light" style="margin-top:0;margin-bottom:0;min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-1572" alt="a room with a wooden floor" src="<?php echo esc_url( $image_sesi_labs_fenomenos ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"485px"} -->
 <div style="height:485px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
 <!-- /wp:cover --></div>
@@ -49,7 +55,7 @@
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"dimensions":{"minHeight":"336px"},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="min-height:336px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"left","style":{"typography":{"textTransform":"uppercase"},"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="margin-top:0;margin-bottom:0;text-transform:uppercase"><img class="wp-image-1562" style="width: NaNpx;" src="http://mateuswetah.com.br/wp-content/uploads/2023/07/tag-primaria-200.svg" alt=""> Título</h2>
+<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="margin-top:0;margin-bottom:0;text-transform:uppercase"><img class="wp-image-1562" style="width: NaNpx;" src="<?php echo esc_url( $image_tag_primaria_200 ); ?>" alt=""> Título</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} -->
@@ -62,7 +68,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Descobrir <img class="wp-image-1519" style="width: NaNpx;" src="http://mateuswetah.com.br/wp-content/uploads/2021/12/arrow-left-white.svg" alt=""></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Descobrir <img class="wp-image-1519" style="width: NaNpx;" src="<?php echo esc_url( $image_arrow_left_white ); ?>" alt=""></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -117,7 +123,7 @@
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"dimensions":{"minHeight":"336px"},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group" style="min-height:336px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"left","style":{"typography":{"textTransform":"uppercase"},"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="margin-top:0;margin-bottom:0;text-transform:uppercase"><img class="wp-image-1521" style="width: NaNpx;" src="http://mateuswetah.com.br/wp-content/uploads/2021/12/tags.svg" alt=""> Título</h2>
+<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="margin-top:0;margin-bottom:0;text-transform:uppercase"><img class="wp-image-1521" style="width: NaNpx;" src="<?php echo esc_url( $image_tags ); ?>" alt=""> Título</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} -->
@@ -130,7 +136,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Descobrir <img class="wp-image-1519" style="width: NaNpx;" src="http://mateuswetah.com.br/wp-content/uploads/2021/12/arrow-left-white.svg" alt=""></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Descobrir <img class="wp-image-1519" style="width: NaNpx;" src="<?php echo esc_url( $image_arrow_left_white ); ?>" alt=""></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -146,7 +152,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"id":1557,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://mateuswetah.com.br/wp-content/uploads/2023/07/sesi-labs-imaginando-futuro1-1.png" alt="a large empty room" class="wp-image-1557"/></figure>
+<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $image_sesi_labs_imaginando_futuro_1 ); ?>" alt="a large empty room" class="wp-image-1557"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"color":{"background":"#ffffff66"},"layout":{"selfStretch":"fixed","flexSize":"100%"}},"layout":{"type":"default"}} -->
