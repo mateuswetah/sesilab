@@ -110,6 +110,10 @@
     --theme-text-color: var(--theme-palette-color-8);
     --theme-link-hover-color: var(--theme-palette-color-7);
 }
+body:not(.tainacan-admin-page) .tainacan-modal-content,
+body:not(.tainacan-admin-page) .tooltip {
+    --tainacan-primary: var(--theme-palette-color-17, #b1ecf3);
+}
 .theme-items-list {
     --theme-box-shadow: none;
 }
@@ -126,6 +130,7 @@
     --tainacan-label-color: var(--theme-palette-color-8);
     --tainacan-info-color: var(--theme-palette-color-8);
 }
+
 .theme-items-list .items-list-area .tainacan-records-container img {
     border-radius: 6px;
 }
@@ -163,9 +168,23 @@
     :not(.wp-block-tainacan-faceted-search) > .theme-items-list:not(.is-fullscreen) {
         top: -60px !important;
     }
-}
-.theme-items-list #filters-modal .modal-content #filters-items-list {
-    padding: 18px 18px 18px 36px;
+    .theme-items-list .items-list-area .tainacan-records-container {
+        margin-left: 27px;
+        margin-right: -23px;
+    }
+    .theme-items-list .items-list-area .tainacan-masonry-container {
+        margin-right: -14px;
+    }
+    .theme-items-list .items-list-area .tainacan-list-container {
+        margin-left: 27px;
+        margin-right: 9px;
+    }
+    .theme-items-list #filters-modal .modal-content {
+        padding-right: 0px !important;
+    }
+    .theme-items-list #filters-modal .modal-content #filters-items-list {
+        padding: 18px 24px 18px 36px;
+    }
 }
 .theme-items-list #filters-modal {
     --theme-border-radius: 10px;
@@ -174,16 +193,145 @@
     --tainacan-item-background-color: var(--theme-palette-color-6);
 }
 .theme-items-list #filters-modal .modal-content {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 .tainacan-modal #filters-modal .modal-content h3,
 .theme-items-list #filters-modal .modal-content h3 {
     font-size: 1.25em;
 }
+.entry-content .theme-items-list #advanced-search-container {
+    background-color: var(--theme-palette-color-6);
+    width: calc(100% - 1rem);
+    margin: .5rem;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
 
 .theme-items-list #items-list-area #items-list-results {
     padding-top: 2px;
     --tainacan-skeleton-color: var(--theme-palette-color-17, #b1ecf3);
+}
+.tainacan-modal input.input,
+.tainacan-modal .input,
+.tainacan-modal textarea.textarea,
+.tainacan-modal .textarea,
+.tainacan-modal input[type="color"].input,
+.tainacan-modal input[type="date"].input,
+.tainacan-modal input[type="datetime-local"].input,
+.tainacan-modal input[type="datetime"].input,
+.tainacan-modal input[type="email"].input,
+.tainacan-modal input[type="number"].input,
+.tainacan-modal input[type="month"].input,
+.tainacan-modal input[type="password"].input,
+.tainacan-modal input[type="search"].input,
+.tainacan-modal input[type="tel"].input,
+.tainacan-modal input[type="text"].input,
+.tainacan-modal input[type="time"].input,
+.tainacan-modal input[type="url"].input,
+.tainacan-modal input[type="week"].input,
+.entry-content .theme-items-list input.input,
+.entry-content .theme-items-list .input,
+.entry-content .theme-items-list textarea.textarea,
+.entry-content .theme-items-list .textarea,
+.entry-content .theme-items-list input[type="color"].input,
+.entry-content .theme-items-list input[type="date"].input,
+.entry-content .theme-items-list input[type="datetime-local"].input,
+.entry-content .theme-items-list input[type="datetime"].input,
+.entry-content .theme-items-list input[type="email"].input,
+.entry-content .theme-items-list input[type="number"].input,
+.entry-content .theme-items-list input[type="month"].input,
+.entry-content .theme-items-list input[type="password"].input,
+.entry-content .theme-items-list input[type="search"].input,
+.entry-content .theme-items-list input[type="tel"].input,
+.entry-content .theme-items-list input[type="text"].input,
+.entry-content .theme-items-list input[type="time"].input,
+.entry-content .theme-items-list input[type="url"].input,
+.entry-content .theme-items-list input[type="week"].input,
+.entry-content .tainacan-modal .select select,
+.entry-content .theme-items-list .select select,
+.entry-content .tainacan-modal .dropdown .dropdown-menu,
+.entry-content .tainacan-modal .autocomplete .dropdown-menu,
+.entry-content .theme-items-list .dropdown .dropdown-menu,
+.entry-content .theme-items-list .autocomplete .dropdown-menu,
+.entry-content .tainacan-modal .dropdown .dropdown-menu .dropdown-content,
+.entry-content .tainacan-modal .autocomplete .dropdown-menu .dropdown-content,
+.entry-content .theme-items-list .dropdown .dropdown-menu .dropdown-content,
+.entry-content .theme-items-list .autocomplete .dropdown-menu .dropdown-content {
+    border-radius: 5px !important;
+}
+.tainacan-modal .dropdown .dropdown-menu .dropdown-content,
+.tainacan-modal .autocomplete .dropdown-menu .dropdown-content,
+.entry-content .theme-items-list .dropdown .dropdown-menu .dropdown-content,
+.entry-content .theme-items-list .autocomplete .dropdown-menu .dropdown-content,
+.entry-content .theme-items-list .dropdown .dropdown-menu .dropdown-content .dropdown-item,
+.entry-content .theme-items-list .autocomplete .dropdown-menu .dropdown-content .dropdown-item {
+    padding: 5px !important
+}
+.tainacan-modal input.input,
+.tainacan-modal .input,
+.tainacan-modal textarea.textarea,
+.tainacan-modal .textarea,
+.tainacan-modal input[type="color"].input,
+.tainacan-modal input[type="date"].input,
+.tainacan-modal input[type="datetime-local"].input,
+.tainacan-modal input[type="datetime"].input,
+.tainacan-modal input[type="email"].input,
+.tainacan-modal input[type="number"].input,
+.tainacan-modal input[type="month"].input,
+.tainacan-modal input[type="password"].input,
+.tainacan-modal input[type="search"].input,
+.tainacan-modal input[type="tel"].input,
+.tainacan-modal input[type="text"].input,
+.tainacan-modal input[type="time"].input,
+.tainacan-modal input[type="url"].input,
+.tainacan-modal input[type="week"].input,
+.entry-content .theme-items-list input.input,
+.entry-content .theme-items-list .input,
+.entry-content .theme-items-list textarea.textarea,
+.entry-content .theme-items-list .textarea,
+.entry-content .theme-items-list input[type="color"].input,
+.entry-content .theme-items-list input[type="date"].input,
+.entry-content .theme-items-list input[type="datetime-local"].input,
+.entry-content .theme-items-list input[type="datetime"].input,
+.entry-content .theme-items-list input[type="email"].input,
+.entry-content .theme-items-list input[type="number"].input,
+.entry-content .theme-items-list input[type="month"].input,
+.entry-content .theme-items-list input[type="password"].input,
+.entry-content .theme-items-list input[type="search"].input,
+.entry-content .theme-items-list input[type="tel"].input,
+.entry-content .theme-items-list input[type="text"].input,
+.entry-content .theme-items-list input[type="time"].input,
+.entry-content .theme-items-list input[type="url"].input,
+.entry-content .theme-items-list input[type="week"].input {
+    line-height: 1.5em !important;
+}
+.tainacan-modal .button,
+.entry-content .theme-items-list .button {
+  font-weight: 500;
+}
+.tainacan-modal .search-control .search-control-item .dropdown-menu div.dropdown-content .dropdown-item,
+.entry-content .theme-items-list .search-control .search-control-item .dropdown-menu div.dropdown-content .dropdown-item {
+  padding: 0.5em 1.125em 0.5em 0.875em !important;
+  border-radius: 5px !important;
+}
+.entry-content .theme-items-list .search-control .search-control-item .button:hover:not(.is-success),
+.entry-content .theme-items-list .search-control .search-control-item .button:focus:not(.is-success) {
+    border-radius: 5px !important;
+    background-color: rgba(0, 0, 0, 0.075) !important;
+}
+.entry-content .theme-items-list .search-control .search-control-item .label {
+    line-height: 2.25em;
+}
+.tainacan-modal .button:not(.is-small):not(.is-medium):not(.is-large),
+.entry-content .theme-items-list .button:not(.is-small):not(.is-medium):not(.is-large) {
+    height: 2.5em !important;
+}
+.theme-items-list #items-list-area #items-list-results .table-wrapper {
+    overflow-x: hidden !important;
+}
+.theme-items-list #items-list-area #items-list-results .table-container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Layout da página de itens */
@@ -192,7 +340,7 @@
 }
 .tainacan-gallery-above-title .tainacan-media-component,
 .tainacan-item-single-page .tainacan-media-component {
-    --swiper-theme-color: var(--theme-palette-color-10, #f29400);
+    --swiper-theme-color: var(--theme-palette-color-10,#f29400);
     --swiper-navigation-color: var(--theme-palette-color-10, #f29400);
 }
 .tainacan-media-component__swiper-main .swiper-slide-content a:first-of-type,
@@ -236,43 +384,37 @@
     max-width: var(--tainacan-media-thumbs-carousel-item-size, 136px) !important;
 }
 .tainacan-media-component__swiper-main + .tainacan-media-component__swiper-thumbs li.swiper-slide img {
-    border-bottom: none !important;
     border-radius: 0px;
 }
 .tainacan-media-component__swiper-main + .tainacan-media-component__swiper-thumbs li.swiper-slide:not(.swiper-slide-thumb-active) .swiper-slide-content {
     background-color: var(--theme-palette-color-1);
 }
 .tainacan-media-component__swiper-main + .tainacan-media-component__swiper-thumbs li.swiper-slide:not(.swiper-slide-thumb-active) img {
-    opacity: 0.35;  
     margin-bottom: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.tainacan-media-component__swiper-main + .tainacan-media-component__swiper-thumbs li.swiper-slide:not(.swiper-slide-thumb-active) img:hover {
-    opacity: 0.85;  
 }
 .theme-items-list:not(.is-filters-menu-open) .filters-menu:not(.filters-menu-modal) {
     z-index: 4 !important;
 }
-.theme-items-list.is-filters-menu-open .filters-menu:not(.filters-menu-modal) {
-    z-index: 99999 !important;
+.entry-content .theme-items-list.is-filters-menu-open .filters-menu:not(.filters-menu-modal) {
+    z-index: 9 !important;
 }  
 @media screen and (min-width: 960px)  {
     body[class*=' single-tnc_col_'] {
         background-position-y: 1180px;
     }
     body[class*=' single-tnc_col_'] .entry-header.ct-container {
-        padding-right: 450px;
+        padding-right: 500px;
     }
     body[class*=' single-tnc_col_'] .hero-section+.ct-container-full {
         padding-top: 32px;
     }
     body[class*=' single-tnc_col_'] .tainacan-item-single-page .tainacan-item-single--affix-column .tainacan-item-section.tainacan-item-section--gallery {
         --background-color: transparent;
-        top: 20vh;
-        margin-top: -38vh;
+        top: 22vh;
+        margin-top: -52vh;
         z-index: 2;
     }
     body[class*=' single-tnc_col_'] .tainacan-item-single-page .tainacan-item-single--layout-type-mg .tainacan-item-section.tainacan-item-section--metadata:last-child .tainacan-item-section__metadata {
-        --metadata-column-width: 240px;
+        --metadata-column-width: 216px;
     }
 }
