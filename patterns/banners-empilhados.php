@@ -9,7 +9,7 @@
  $image_tag_primaria_200 = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/tag-primaria-200.svg';
  $image_arrow_left_white = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/arrow-left-white.svg';
  $image_sesi_labs_fenomenos = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/sesi-labs-fenomenos.png';
- $image_sesi_labs_imaginando_futuro_1 = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/sesi-labs-imaginando-futuro-1.png';
+ $image_sesi_labs_imaginando_futuro_1 = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/sesi-labs-imaginando-futuro1.png';
 ?>
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|70"}},"layout":{"type":"flex","orientation":"vertical"}} -->

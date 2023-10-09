@@ -67,6 +67,126 @@
     top: -4px;
 }
 
+/* Tira a cor e imagem de fundo dos shortcodes de posts */
+.ct-posts-shortcode {
+    background: none !important;
+}
+[data-link] .ct-posts-shortcode .entry-title a {
+    color: white;
+}
+
+/* Tira a margem entre seções da home page */
+.home article > .entry-content > *.has-background {
+    margin-bottom: 0;
+}
+
+/* Alternância de cores na lista de coleções */
+
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+1),
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+7) {
+    background-color: var(--theme-palette-color-15);
+    background-image: url('./assets/images/p3.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+2),
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+8) {
+    background-color: var(--theme-palette-color-10);
+    background-image: url('./assets/images/p2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+3),
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+9) {
+    background-color: var(--theme-palette-color-11);
+    background-image: url('./assets/images/p1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+4),
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+10) {
+    background-color: var(--theme-palette-color-12);
+    background-image: url('./assets/images/p2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+5),
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+11){
+    background-color: var(--theme-palette-color-13);
+    background-image: url('./assets/images/p1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+6),
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+12) {
+    background-color: var(--theme-palette-color-14);
+    background-image: url('./assets/images/p3.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+1) .ct-media-container::after,
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+7) .ct-media-container::after {
+    background-color: var(--theme-palette-color-15);
+    background-image: url('./assets/images/p3.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    opacity: 0.8;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+2) .ct-media-container::after,
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+8) .ct-media-container::after {
+    background-color: var(--theme-palette-color-10);
+    background-image: url('./assets/images/p2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    opacity: 0.8;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+3) .ct-media-container::after,
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+9) .ct-media-container::after {
+    background-color: var(--theme-palette-color-11);
+    background-image: url('./assets/images/p1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.8;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+4) .ct-media-container::after,
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+10) .ct-media-container::after {
+    background-color: var(--theme-palette-color-12);
+    background-image: url('./assets/images/p2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    opacity: 0.8;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+5) .ct-media-container::after,
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+11) .ct-media-container::after {
+    background-color: var(--theme-palette-color-13);
+    background-image: url('./assets/images/p1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.8;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+6) .ct-media-container::after,
+[data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+12) .ct-media-container::after {
+    background-color: var(--theme-palette-color-14);
+    background-image: url('./assets/images/p3.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    opacity: 0.8;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card {
+    transition: background-blend-mode 0.3s ease-in-out;
+}
+[data-prefix="tainacan-collection_archive"] .entry-card:hover {
+    background-blend-mode: color-dodge;
+}
+
+[data-prefix="tainacan-collection_archive"] .entry-card .entry-title a {
+    text-shadow: 0 0 10px rgba(0,0,0, 0.45);
+}
+[data-prefix="tainacan-collection_archive"] .ct-media-container img {
+    filter: grayscale(0.75)
+}
+
+
 /* Layout da lista de itens */
 .tainacan-collection-header {
     --vertical-alignment: center;
