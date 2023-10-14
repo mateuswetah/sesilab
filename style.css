@@ -4,6 +4,7 @@
  * Author: wetah
  * Template: blocksy
  * Text Domain: sesilab
+ * Version: 0.1.0
  */
 
  /* Ajustes no botão de Ingressos do Cabeçalho */
@@ -71,7 +72,7 @@
 .ct-posts-shortcode {
     background: none !important;
 }
-[data-link] .ct-posts-shortcode .entry-title a {
+[data-link] .ct-posts-shortcode[data-prefix="tainacan-collection_archive"] .entry-title a {
     color: white;
 }
 
@@ -81,7 +82,6 @@
 }
 
 /* Alternância de cores na lista de coleções */
-
 [data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+1),
 [data-prefix="tainacan-collection_archive"] .entry-card:nth-child(1n+7) {
     background-color: var(--theme-palette-color-15);
@@ -518,6 +518,19 @@ body:not(.tainacan-admin-page) .tooltip {
 .entry-content .theme-items-list.is-filters-menu-open .filters-menu:not(.filters-menu-modal) {
     z-index: 9 !important;
 }  
+
+/* Metadado da Conexão BNCC */
+.metadata-slug-conexao-bncc .tainacan-metadata-value {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+}
+.metadata-slug-conexao-bncc .multivalue-separator {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+
 @media screen and (min-width: 960px)  {
     body[class*=' single-tnc_col_'] {
         background-position-y: 1180px;
