@@ -17,6 +17,16 @@
     background-color: transparent;
 }
 
+/* GTranslate Widget */
+select.gt_selector {
+    fill: white;
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+    filter: brightness(3);
+}
+
 /* Menu mobile ainda mostra o header */
 #offcanvas.ct-panel {
     top: calc(var(--admin-bar, 0px) + 110px);
