@@ -5,6 +5,11 @@
  */
 function sesilab_curadoria_post_type_init() {
 
+
+    $image_sesi_labs_imaginando_futuro_1 = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/sesi-labs-imaginando-futuro1.png';
+    $image_sesi_labs_imaginando_futuro_2 = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/sesi-labs-imaginando-futuro2.png';
+    $image_sesi_labs_card_bg_aprender_fazendo = esc_url( get_stylesheet_directory_uri() ) . '/assets/images/bg-aprender-fazendo.png';
+
     // Registers curadoria post type 
     $args = array(
         'labels'             => array(
@@ -46,7 +51,549 @@ function sesilab_curadoria_post_type_init() {
         'menu_position'      => null,
         'menu_icon'          => 'dashicons-format-quote',
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-        'template'           => []
+        'template'           => [
+            [
+                'core/heading',
+                [
+                    'placeholder' => 'Percurso de visita',
+                    'content' => 'Percurso de visita',
+                    'level' => 1
+                ]
+            ],
+            [
+                'core/group',
+                [
+                    'layout' => [
+                        'type' => 'constrained',
+                        'justifyContent' => 'center'
+                    ],
+                    'align' => 'wide',
+                    'style' => [
+                        'spacing' => [
+                            'blockGap' => 'var:preset|spacing|60'
+                        ]
+                    ]
+                ],
+                [
+                    [
+                        'core/media-text',
+                        [
+                            'mediaType' => 'image',
+                            'mediaPosition' => 'left',
+                            'verticalAlignment' => 'center',
+                            'imageFill' => true,
+                            'mediaSizeSlug' => 'large',
+                            'mediaWidth' => '38',
+                            'focalPoint' => [
+                                'x' => 0.76,
+                                'y' => 0.45
+                            ],
+                            'style' => [
+                                'spacing' => [
+                                    'padding' => [
+                                        'top' => '0',
+                                        'bottom' => '0',
+                                    ]
+                                ],
+                                'textColor' => 'palette-color-9',
+                                'backgroundColor' => 'palette-color-10',
+                            ]
+                        ],
+                        [
+                            [
+                                'core/group',
+                                [
+                                    'layout' => [
+                                        'type' => 'constrained',
+                                    ],
+                                    'style' => [
+                                        'spacing' => [
+                                            'padding' => [
+                                                'top' => 'var:preset|spacing|70',
+                                                'bottom' => 'var:preset|spacing|70'
+                                            ]
+                                        ],
+                                    ]
+                                ],
+                                [
+                                    [
+                                        'core/heading',
+                                        [
+                                            'placeholder' => 'Nome do Aparato',
+                                            'level' => 2,
+                                            'style' => [
+                                                'typography' => [
+                                                    'textTransform' => 'uppercase'
+                                                ],
+                                                'layout' => [
+                                                    'selfStretch' => 'fit',
+                                                    'flexSize' => null
+                                                ],
+                                                'spacing' => [
+                                                    'margin' => [
+                                                        'top' => '0',
+                                                        'bottom' => '0'
+                                                    ]
+                                                ]
+                                            ],
+                                            'textColor' => 'palette-color-9',
+                                            'fontSize' => 'medium'
+                                        ]
+                                    ],
+                                    [ 'core/spacer', [ 'height' => '25px' ] ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Descrição inicial sobre o aparato.',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ]
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Conceito-chave: nome do conceito chave.',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ]
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Mais detalhamentos sobre o aparato...',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ]
+                                        ]
+                                    ],
+                                    [
+                                        'core/buttons',
+                                        [
+                                            'layout' => [
+                                                'type' => 'flex',
+                                                'justifyContent' => 'right'
+                                            ]
+                                        ],
+                                        [
+                                            [
+                                                'core/button',
+                                                [
+                                                    'placeholder' => 'Saiba mais',
+                                                    'target' => '_blank',
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        'core/media-text',
+                        [
+                            'mediaType' => 'image',
+                            'mediaPosition' => 'right',
+                            'verticalAlignment' => 'center',
+                            'imageFill' => true,
+                            'mediaSizeSlug' => 'large',
+                            'mediaWidth' => '38',
+                            'focalPoint' => [
+                                'x' => 0.76,
+                                'y' => 0.45
+                            ],
+                            'style' => [
+                                'spacing' => [
+                                    'padding' => [
+                                        'top' => '0',
+                                        'bottom' => '0',
+                                    ]
+                                ],
+                                'textColor' => 'palette-color-9',
+                                'backgroundColor' => 'palette-color-18',
+                            ]
+                        ],
+                        [
+                            [
+                                'core/group',
+                                [
+                                    'layout' => [
+                                        'type' => 'constrained',
+                                    ],
+                                    'style' => [
+                                        'spacing' => [
+                                            'padding' => [
+                                                'top' => 'var:preset|spacing|70',
+                                                'bottom' => 'var:preset|spacing|70'
+                                            ]
+                                        ],
+                                    ]
+                                ],
+                                [
+                                    [
+                                        'core/heading',
+                                        [
+                                            'placeholder' => 'Nome do Segundo Aparato',
+                                            'level' => 2,
+                                            'style' => [
+                                                'typography' => [
+                                                    'textTransform' => 'uppercase'
+                                                ],
+                                                'layout' => [
+                                                    'selfStretch' => 'fit',
+                                                    'flexSize' => null
+                                                ],
+                                                'spacing' => [
+                                                    'margin' => [
+                                                        'top' => '0',
+                                                        'bottom' => '0'
+                                                    ]
+                                                ]
+                                            ],
+                                            'textColor' => 'palette-color-9',
+                                            'fontSize' => 'medium'
+                                        ]
+                                    ],
+                                    [ 'core/spacer', [ 'height' => '25px' ] ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Descrição inicial sobre o aparato.',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ]
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Conceito-chave: nome do conceito chave.',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ]
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Mais detalhamentos sobre o aparato...',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ]
+                                        ]
+                                    ],
+                                    [
+                                        'core/buttons',
+                                        [
+                                            'layout' => [
+                                                'type' => 'flex',
+                                                'justifyContent' => 'right'
+                                            ]
+                                        ],
+                                        [
+                                            [
+                                                'core/button',
+                                                [
+                                                    'placeholder' => 'Saiba mais',
+                                                    'target' => '_blank',
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ],
+                ]
+            ],
+            [
+                'core/spacer',
+                [
+                    'height' => '26px'
+                ]
+            ],
+            [
+                'core/heading',
+                [
+                    'placeholder' => 'Integração com o currículo',
+                    'content' => 'Integração com o currículo',
+                    'level' => 2,
+                ]
+            ],
+            [
+                'core/heading',
+                [
+                    'placeholder' => 'STEAM',
+                    'content' => 'STEAM',
+                    'level' => 3,
+                ]
+            ],
+            [
+                'core/paragraph',
+                [
+                    'placeholder' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ...',
+                ]
+                ],
+            [
+                'core/heading',
+                [
+                    'placeholder' => 'CTSA',
+                    'content' => 'CTSA',
+                    'level' => 3,
+                ]
+            ],
+            [
+                'core/paragraph',
+                [
+                    'placeholder' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ...',
+                ]
+            ],
+            [
+                'core/heading',
+                [
+                    'placeholder' => 'BNCC',
+                    'content' => 'BNCC',
+                    'level' => 3,
+                ]
+            ],
+            [
+                'core/paragraph',
+                [
+                    'placeholder' => 'As principais habilidades específicas trabalhadas neste percurso são:',
+                    'content' => 'As principais habilidades específicas trabalhadas neste percurso são:',
+                ]
+            ],
+            [
+                'core/group',
+                [
+                    'layout' => [
+                        'type' => 'flex',
+                        'flexWrap' => 'nowrap',
+                        'verticalAlignment' => 'stretch',
+                    ]
+                ],
+                [
+                    [
+                        'core/group',
+                        [
+                            'layout' => [
+                                'type' => 'constrained',
+                            ],
+                            'style' => [
+                                'layout' => [
+                                    'selfStretch' => 'fixed',
+                                    'flexSide' => '50%'
+                                ],
+                                'border' => [
+                                    'radius' => '12px'
+                                ],
+                            ],
+                            'backgroundColor' => 'palette-color-6',
+                        ],
+                        [
+                            [
+                                'core/heading',
+                                [
+                                    'level' => 4,
+                                    'placeholder' => 'Habilidade 1'
+                                ]
+                            ],
+                            [
+                                'core/paragraph',
+                                [
+                                    'placeholder' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ...',
+                                ]
+                                ],
+                            [
+                                'core/buttons',
+                                [
+                                    'layout' => [
+                                        'type' => 'flex',
+                                        'justifyContent' => 'right'
+                                    ]
+                                ],
+                                [
+                                    [
+                                        'core/button',
+                                        [
+                                            'placeholder' => 'Veja mais...',
+                                            'target' => '_blank',
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        'core/group',
+                        [
+                            'layout' => [
+                                'type' => 'constrained',
+                            ],
+                            'style' => [
+                                'layout' => [
+                                    'selfStretch' => 'fixed',
+                                    'flexSide' => '50%'
+                                ],
+                                'border' => [
+                                    'radius' => '12px'
+                                ],
+                            ],
+                            'backgroundColor' => 'palette-color-6',
+                        ],
+                        [
+                            [
+                                'core/heading',
+                                [
+                                    'level' => 4,
+                                    'placeholder' => 'Habilidade 2'
+                                ]
+                            ],
+                            [
+                                'core/paragraph',
+                                [
+                                    'placeholder' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ...',
+                                ]
+                                ],
+                            [
+                                'core/buttons',
+                                [
+                                    'layout' => [
+                                        'type' => 'flex',
+                                        'justifyContent' => 'right'
+                                    ]
+                                ],
+                                [
+                                    [
+                                        'core/button',
+                                        [
+                                            'placeholder' => 'Veja mais...',
+                                            'target' => '_blank',
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            [
+                'core/spacer',
+                [
+                    'height' => '36px'
+                ]
+            ],
+            [
+                'core/cover',
+                [
+                    'url' => $image_sesi_labs_card_bg_aprender_fazendo,
+                    'dimRatio' => 30,
+                    'overlayColor' => 'palette-color-17',
+                    'focalPoint' => [
+                        'x' => 0,
+                        'y' => 0.44
+                    ],
+                    'contentPosition' => 'center center',
+                    'isDark' => false,
+                    'align' => 'full',
+                    'style' => [
+                        'color' => [
+                            'duotone' => 'unset'
+                        ]
+                    ],
+                    'textColor' => 'palette-color-4',
+                    'className' => 'is-style-sesilab-cover-contain',
+                    'layout' => [
+                        'type' => 'default'
+                    ]
+                ],
+                [
+                    [
+                        'core/columns',
+                        [
+                            'style' => [
+                                'spacing' => [
+                                    'blockGap' => [
+                                        'top' => 'var:preset|spacing|60',
+                                        'left' => 'var:preset|spacing|80'
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            [
+                                'core/column',
+                                [
+                                    'width' => '66.66%'
+                                ],
+                                [
+                                    [
+                                        'core/heading',
+                                        [
+                                            'level' => 2,
+                                            'content' => 'Relacionados',
+                                            'placeholder' => 'Relacionados'
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non gravida sapien. Sed eget consectetur ante. Etiam lobortis, quam in varius dignissim, eros quam sollicitudin purus, vel cursus nisl odio sed turpis. Sed molestie dapibus sapien id facilisis. Quisque pretium semper lectus in facilisis.',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ],
+                                            'textColor' => 'palette-color-9'
+                                        ]
+                                    ],
+                                    [
+                                        'core/paragraph',
+                                        [
+                                            'placeholder' => 'Maecenas congue laoreet magna, eu porttitor felis bibendum non. In tincidunt ultricies urna. Nulla quis diam ac sem elementum tincidunt eu nec enim. Cras sed magna magna. Nullam aliquet lorem massa, non euismod magna pellentesque ut. Donec lacinia dui nec facilisis pretium.',
+                                            'style' => [
+                                                'typography' => [
+                                                    'fontSize' => '18px'
+                                                ]
+                                            ],
+                                            'textColor' => 'palette-color-9'
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            [
+                                'core/column',
+                                [
+                                    'width' => '33.33%',
+                                    'isVerticalAlignmentCenter' => true
+                                ],
+                                [
+                                    [
+                                        'tainacan/dynamic-items-list',
+                                        [
+                                            'maxColumnsCount' => 2,
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
     );
 
     register_post_type( 'curadorias', $args );
