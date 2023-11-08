@@ -7,16 +7,17 @@
  * Version: 0.1.2
  */
 
- /* Ajustes no botão de Ingressos do Cabeçalho */
+/* Ajustes nos elementos do cabeçalho para melhor aparência e responsividade */
 [data-header*="type-1"] .ct-header [data-id="button"] .ct-button-ghost:hover,
 [data-header*="type-1"] .ct-header [data-id="button"] .ct-button-ghost:focus {
     background-color: transparent;
 }
-
-/* Ajustes nos elementos do cabeçalho para melhor responsividade */
 .wp-block-a11y-buttons-a11y-button {
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+[data-header*="type-1"] .ct-header [data-row*="top"] > div [data-id="widget-area-1"] p:empty {
+    display: none;
 }
 @media screen and (max-width: 740px) {
 	[data-header*="type-1"] .ct-header [data-row*="top"] > div,
