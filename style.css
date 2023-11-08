@@ -4,27 +4,93 @@
  * Author: wetah
  * Template: blocksy
  * Text Domain: sesilab
- * Version: 0.1.1
+ * Version: 0.1.2
  */
 
  /* Ajustes no botão de Ingressos do Cabeçalho */
-.ct-header-cta [data-size="large"] {
-    --theme-button-min-height: 56px;
-    --theme-button-padding: 3px 46px;
-}
 [data-header*="type-1"] .ct-header [data-id="button"] .ct-button-ghost:hover,
 [data-header*="type-1"] .ct-header [data-id="button"] .ct-button-ghost:focus {
     background-color: transparent;
 }
 
+/* Ajustes nos elementos do cabeçalho para melhor responsividade */
+.wp-block-a11y-buttons-a11y-button {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+@media screen and (max-width: 740px) {
+	[data-header*="type-1"] .ct-header [data-row*="top"] > div,
+    [data-header*="type-1"] .ct-header [data-row*="top"] > div [data-id="widget-area-1"] {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+        width: 100%;
+    }
+}
+
+/* Curadorias com limite de linhas */
+.entry-card.curadorias .entry-excerpt {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
 /* GTranslate Widget */
-select.gt_selector {
-    fill: white;
-    color: white;
-    border: none;
-    font-size: 0.875rem;
-    cursor: pointer;
-    filter: brightness(3);
+#header [data-row*="top"] .ct-button,
+#offcanvas .ct-button {
+	padding-left: 0px;
+}
+#gt_float_wrapper {
+	height: 44px;
+}
+#gt_float_wrapper .gt_float_switcher .gt_options {
+	width: max-content;
+	position: absolute;	
+}
+#gt_float_wrapper .gt_float_switcher .gt-selected {
+	width: fit-content;
+	margin-left: auto;
+	min-width: 52px;
+}
+#gt_float_wrapper .gt_float_switcher,
+#gt_float_wrapper .gt_float_switcher .gt-selected {
+	background: transparent;
+	box-shadow: none;
+	font-size: 0.875rem;
+	color: white;
+}
+#gt_float_wrapper .gt_float_switcher .gt-current-lang,
+#gt_float_wrapper .gt_float_switcher .gt_options a {
+	background: var(--theme-palette-color-15);
+	color: white;
+	font-family: var(--theme-font-family);
+	font-weight: 500;
+}
+#gt_float_wrapper .gt_float_switcher .gt-selected .gt-current-lang {
+	padding: 10px 0px;
+	background-color: transparent;
+	text-align: right;
+	min-height: 44px;
+}
+#gt_float_wrapper .gt_float_switcher .gt_options {
+	transform: none;
+	border-radius: 3px;
+}
+#gt_float_wrapper .gt_float_switcher .gt_options a:hover {
+	background-color: var(--theme-palette-color-10);
+}
+#gt_float_wrapper .gt_float_switcher img {
+	width: 24px;
+}
+#gt_float_wrapper .gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow {
+	display: none;
+}
+@media screen and (max-width: 968px) {
+    #gt_float_wrapper .gt_float_switcher .gt_options {
+        right: 0px;
+    }
 }
 
 /* VLibras */
@@ -32,16 +98,21 @@ div[vw].enabled {
     top: 25% !important;
 }
 
-/* Menu mobile ainda mostra o header */
-#offcanvas.ct-panel {
-    top: calc(var(--admin-bar, 0px) + 110px);
+/* Estiliza bloco de carrossel de termos */
+.wp-block-tainacan-carousel-terms-list .tainacan-carousel .swiper a > img {
+	border-radius: 8px;
+	opacity: 0.9;
+	transition: opacity 0.2s ease;
 }
-#offcanvas.ct-panel .ct-panel-actions {
-    display: none;
-    visibility: hidden;
+.wp-block-tainacan-carousel-terms-list .tainacan-carousel .swiper a:hover > img {
+	opacity: 1.0;
 }
-#offcanvas.ct-panel .ct-panel-content-inner {
-    --panel-padding: 72px 40px;
+.wp-block-tainacan-carousel-terms-list .tainacan-carousel .swiper a:hover > span {
+	color: var(--theme-palette-color-15) !important;
+}
+.wp-block-tainacan-carousel-terms-list .tainacan-carousel .swiper a > span {
+	padding-left: 4px !important;
+	padding-right: 4px !important;
 }
 
 /* Espaçamento de links do menu no footer */

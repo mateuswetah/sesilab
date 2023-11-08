@@ -2,7 +2,7 @@
 
 add_action('blocksy:loop:card:start', function() {
     
-    if ( get_post_type() !== 'tainacan-collection' )
+    if ( get_post_type() !== 'tainacan-collection' || is_search() )
         return;
 
     $source = [
