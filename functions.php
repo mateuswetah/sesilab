@@ -26,5 +26,5 @@ require get_stylesheet_directory() . '/inc/block-patterns.php';
 // Block Styles.
 require get_stylesheet_directory() . '/inc/block-styles.php';
 
-// Collection Colors
-require get_stylesheet_directory() . '/inc/collection-colors.php';
+// Collection Colors and Wide cards
+require get_stylesheet_directory() . '/inc/collection-cards.php';
