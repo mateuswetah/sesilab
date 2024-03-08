@@ -4,7 +4,7 @@
  * Author: wetah
  * Template: blocksy
  * Text Domain: sesilab
- * Version: 0.1.3
+ * Version: 0.1.4
  */
 
 /* Ajustes nos elementos do cabeçalho para melhor aparência e responsividade */
@@ -14,7 +14,7 @@
 }
 .wp-block-a11y-buttons-a11y-button {
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 0px !important;
 }
 [data-header*="type-1"] .ct-header [data-row*="top"] > div [data-id="widget-area-1"] p:empty {
     display: none;
@@ -642,4 +642,35 @@ body:not(.tainacan-admin-page) .tooltip {
     body[class*=' single-tnc_col_'] .tainacan-item-single-page .tainacan-item-single--layout-type-mg .tainacan-item-section.tainacan-item-section--metadata:last-child .tainacan-item-section__metadata {
         --metadata-column-width: 216px;
     }
+}
+
+/* Cards de posts */
+article.entry-card {
+	position: relative;
+}
+article.entry-card a::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	content: '';
+	display: block;
+}
+[data-archive="default"][data-cards="cover"] .entry-card > :not(.ct-media-container) {
+	position: initial;
+}
+
+/* Related posts cards */
+.ct-related-posts-items > article {
+	position: relative;
+}
+.ct-related-posts-items > article .related-entry-title a::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
