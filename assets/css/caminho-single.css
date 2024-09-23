@@ -1,0 +1,176 @@
+/* Testing palette color and typography overrides */
+.single-caminho,
+.post-type-caminho {
+    --theme-palette-color-1: #781764;
+    --theme-palette-color-2: #ba0280;
+    --theme-palette-color-3: #1f110c;
+    --theme-palette-color-4: #9d9b9b;
+    --theme-palette-color-5: #dbdbdb;
+    --theme-palette-color-6: #b1b1b1;
+    --theme-palette-color-7: #dddedd;
+    --theme-palette-color-8: #ffffff;
+    --theme-palette-color-9: #773500;
+    --theme-palette-color-10: #a94a09;
+    --theme-palette-color-11: #9d5d2e;
+    --theme-palette-color-12: #d6823a;
+    --theme-palette-color-13: #e4a05c;
+    --theme-palette-color-14: #ffd9af;
+    --theme-palette-color-15: #f26c2d;
+    --theme-palette-color-16: #ff9033;
+    --theme-palette-color-17: #e48c00;
+    --theme-palette-color-18: #bd850f;
+    --theme-palette-color-19: #dc2c25;
+    --theme-palette-color-20: #b25442;
+    --theme-palette-color-21: #57903b;
+    --theme-palette-color-22: #6cab49;
+    --theme-palette-color-23: #8c963c;
+    --theme-palette-color-24: #00748c;
+    --theme-palette-color-25: #419ac3;
+    --theme-text-color: var(--theme-palette-color-8);
+    --theme-headings-color: var(--theme-palette-color-8);
+    --background-color: var(--theme-palette-color-1);
+    --wp--preset--color--palette-color-1: var(--theme-palette-color-1);
+    --wp--preset--color--palette-color-2: var(--theme-palette-color-2);
+    --wp--preset--color--palette-color-3: var(--theme-palette-color-3);
+    --wp--preset--color--palette-color-4: var(--theme-palette-color-4);
+    --wp--preset--color--palette-color-5: var(--theme-palette-color-5);
+    --wp--preset--color--palette-color-6: var(--theme-palette-color-6);
+    --wp--preset--color--palette-color-7: var(--theme-palette-color-7);
+    --wp--preset--color--palette-color-8: var(--theme-palette-color-8);
+    --wp--preset--color--palette-color-9: var(--theme-palette-color-9);
+    --wp--preset--color--palette-color-10: var(--theme-palette-color-10);
+    --wp--preset--color--palette-color-11: var(--theme-palette-color-11);
+    --wp--preset--color--palette-color-12: var(--theme-palette-color-12);
+    --wp--preset--color--palette-color-13: var(--theme-palette-color-13);
+    --wp--preset--color--palette-color-14: var(--theme-palette-color-14);
+    --wp--preset--color--palette-color-15: var(--theme-palette-color-15);
+    --wp--preset--color--palette-color-16: var(--theme-palette-color-16);
+    --wp--preset--color--palette-color-17: var(--theme-palette-color-17);
+    --wp--preset--color--palette-color-18: var(--theme-palette-color-18);
+    --wp--preset--color--palette-color-19: var(--theme-palette-color-19);
+    --wp--preset--color--palette-color-20: var(--theme-palette-color-20);
+    --wp--preset--color--palette-color-21: var(--theme-palette-color-21);
+    --wp--preset--color--palette-color-22: var(--theme-palette-color-22);
+    --wp--preset--color--palette-color-23: var(--theme-palette-color-23);
+    --wp--preset--color--palette-color-24: var(--theme-palette-color-24);
+    --wp--preset--color--palette-color-25: var(--theme-palette-color-25);
+}
+.single-caminho .site-main,
+.post-type-caminho .editor-styles-wrapper {
+    --theme-text-color: var(--theme-palette-color-8);
+    --theme-heading-1-color: var(--wp--preset--color--palette-color-8);
+    --theme-heading-2-color: var(--wp--preset--color--palette-color-8);
+    --theme-heading-3-color: var(--wp--preset--color--palette-color-8);
+    --theme-heading-4-color: var(--wp--preset--color--palette-color-8);
+    --theme-heading-5-color: var(--wp--preset--color--palette-color-8);
+    --theme-heading-6-color: var(--wp--preset--color--palette-color-8);
+    --theme-font-family: 'neo-sans', sans-serif;
+    font-family: var(--theme-font-family);
+}
+
+/* Classes das cores de background para paletas que não existem nas configurações do tema */
+.single-caminho .has-palette-color-19-background-color {
+    background-color: var(--wp--preset--color--palette-color-19) !important;
+}
+.single-caminho .has-palette-color-20-background-color {
+    background-color: var(--wp--preset--color--palette-color-20) !important;
+}
+.single-caminho .has-palette-color-21-background-color {
+    background-color: var(--wp--preset--color--palette-color-21) !important;
+}
+.single-caminho .has-palette-color-22-background-color {
+    background-color: var(--wp--preset--color--palette-color-22) !important;
+}
+.single-caminho .has-palette-color-23-background-color {
+    background-color: var(--wp--preset--color--palette-color-23) !important;
+}
+.single-caminho .has-palette-color-24-background-color {
+    background-color: var(--wp--preset--color--palette-color-24) !important;
+}
+.single-caminho .has-palette-color-25-background-color {
+    background-color: var(--wp--preset--color--palette-color-25) !important;
+}
+
+/* Classes das cores de texto para paletas que não existem nas configurações do tema */
+.single-caminho .has-palette-color-19-color {
+    color: var(--wp--preset--color--palette-color-19) !important;
+}
+.single-caminho .has-palette-color-20-color {
+    color: var(--wp--preset--color--palette-color-20) !important;
+}
+.single-caminho .has-palette-color-21-color {
+    color: var(--wp--preset--color--palette-color-21) !important;
+}
+.single-caminho .has-palette-color-22-color {
+    color: var(--wp--preset--color--palette-color-22) !important;
+}
+.single-caminho .has-palette-color-23-color {
+    color: var(--wp--preset--color--palette-color-23) !important;
+}
+.single-caminho .has-palette-color-24-color {
+    color: var(--wp--preset--color--palette-color-24) !important;
+}
+.single-caminho .has-palette-color-25-color {
+    color: var(--wp--preset--color--palette-color-25) !important;
+}
+
+/* Classes das cores de borda para paletas que não existem nas configurações do tema */
+.single-caminho .has-palette-color-19-border-color {
+    border-color: var(--wp--preset--color--palette-color-19) !important;
+}
+.single-caminho .has-palette-color-20-border-color {
+    border-color: var(--wp--preset--color--palette-color-20) !important;
+}
+.single-caminho .has-palette-color-21-border-color {
+    border-color: var(--wp--preset--color--palette-color-21) !important;
+}
+.single-caminho .has-palette-color-22-border-color {
+    border-color: var(--wp--preset--color--palette-color-22) !important;
+}
+.single-caminho .has-palette-color-23-border-color {
+    border-color: var(--wp--preset--color--palette-color-23) !important;
+}
+.single-caminho .has-palette-color-24-border-color {
+    border-color: var(--wp--preset--color--palette-color-24) !important;
+}
+.single-caminho .has-palette-color-25-border-color {
+    border-color: var(--wp--preset--color--palette-color-25) !important;
+}
+
+/* Tipografia das tags de cabeçalho */
+.post-type-caminho .editor-styles-wrapper h1,
+.single-caminho h1 {
+    --theme-font-size: clamp(2.625rem, 2.7778rem + -0.4444vw, 2.5rem);
+    --theme-font-weight: 400;
+}
+.post-type-caminho .editor-styles-wrapper h2,
+.single-caminho h2 {
+    --theme-font-size: clamp(2.5rem, 2.8056rem + -0.8889vw, 2.25rem);
+    --theme-font-weight: 500;
+}
+.post-type-caminho .editor-styles-wrapper h3,
+.single-caminho h3 {
+    --theme-font-size: clamp(2rem, 1.7708rem + 0.6667vw, 2.1875rem);
+    --theme-font-weight: 400;
+}
+.post-type-caminho .editor-styles-wrapper h4,
+.single-caminho h4 {
+    --theme-font-size: clamp(1.625rem, 1.3194rem + 0.8889vw, 1.875rem);
+    --theme-font-weight: 700;
+}
+.post-type-caminho .editor-styles-wrapper h5,
+.single-caminho h5 {
+    --theme-font-size: clamp(1.3125rem, 1.0069rem + 0.8889vw, 1.5625rem);
+    --theme-font-weight: 700;
+}
+.post-type-caminho .editor-styles-wrapper h6,
+.single-caminho h6 {
+    --theme-font-size: clamp(1.125rem, 0.9722rem + 0.4444vw, 1.25rem);
+    --theme-font-weight: 900;
+}
+
+/* Personagens */
+.caminho-personagens > img {
+    object-fit: cover;
+    object-position: 0px 0%;
+}
