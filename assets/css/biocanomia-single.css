@@ -237,3 +237,12 @@
         var(--theme-palette-color-18)
     ) !important;
 }
+
+/* Desabilita o header fixo para que apenas o menu da exposição fique fixo */
+.single-biocanomia [data-sticky*="yes"],
+.single-biocanomia [data-sticky*="fixed"] {
+    position: initial;
+}
+.single-biocanomia  {
+    --header-sticky-height: 0px;
+}
